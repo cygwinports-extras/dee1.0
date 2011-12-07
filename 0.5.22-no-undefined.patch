@@ -1,0 +1,10 @@
+--- origsrc/dee-0.5.22/dee/Makefile.am	2011-09-23 09:10:55.000000000 -0500
++++ src/dee-0.5.22/dee/Makefile.am	2011-12-06 23:28:03.081769200 -0600
+@@ -82,6 +82,7 @@ libdee_1_0_la_LIBADD = \
+   $(DEE_LIBS)
+ 
+ libdee_1_0_la_LDFLAGS = \
++  -no-undefined \
+   $(DEE_LT_LDFLAGS)
+ 
+ libdee_1_0_la_CPPFLAGS = \

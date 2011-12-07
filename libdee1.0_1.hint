@@ -1,0 +1,8 @@
+category: Gnome
+requires: libglib2.0_0
+external-source: dee1.0
+sdesc: "DBus Model-View-Controller object library (runtime)"
+ldesc: "Libdee is a library that uses DBus to provide objects allowing 
+you to create Model-View-Controller type programs across DBus. It also 
+consists of utility objects which extend DBus allowing for peer-to-peer 
+discoverability of known objects without needing a central registrar."

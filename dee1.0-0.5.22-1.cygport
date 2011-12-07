@@ -1,0 +1,16 @@
+inherit gnome2 python
+
+DESCRIPTION="DBus Model-View-Controller object library"
+HOMEPAGE="https://launchpad.net/dee/"
+SRC_URI="http://launchpad.net/dee/${PV[1]}.${PV[2]}/${PV}/+download/dee-${PV}.tar.gz"
+SRC_DIR="dee-${PV}"
+
+PATCH_URI="0.5.22-no-undefined.patch
+           0.5.22-parallel-make.patch"
+
+PKG_NAMES="lib${PN}_1 lib${PN}-devel girepository-Dee0.5 vala-${PN}"
+libdee1_0_1_CONTENTS="usr/bin/*-1.0-1.dll usr/share/doc/"
+libdee1_0_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+girepository_Dee0_5_CONTENTS="usr/*/gir*/Dee-0.5.* ${PYTHON_SITELIB#/}/gi/overrides/Dee.*"
+vala_dee1_0_CONTENTS="usr/share/vala/vapi/dee-1.0.*"
+
