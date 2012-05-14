@@ -1,5 +1,5 @@
 category: Gnome
-requires: libdee1.0_1 girepository-GLib2.0
+requires: libdee1.0_4 girepository-GLib2.0
 external-source: dee1.0
 sdesc: "DBus Model-View-Controller object library (GObject Introspection)"
 ldesc: "Libdee is a library that uses DBus to provide objects allowing 

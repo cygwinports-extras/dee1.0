@@ -1,0 +1,22 @@
+Already declared in dee-filter-model.h.
+
+--- origsrc/dee-1.0.10/src/dee-filter.h	2012-02-24 10:46:45.000000000 -0600
++++ src/dee-1.0.10/src/dee-filter.h	2012-05-14 01:19:41.274088000 -0500
+@@ -30,7 +30,6 @@
+ 
+ G_BEGIN_DECLS
+ 
+-typedef struct _DeeFilter DeeFilter;
+ 
+ /**
+  * DeeFilterMapFunc:
+--- origsrc/dee-1.0.10/src/dee-model-reader.h	2011-12-19 08:11:45.000000000 -0600
++++ src/dee-1.0.10/src/dee-model-reader.h	2012-05-14 01:22:26.046512500 -0500
+@@ -30,7 +30,6 @@
+ 
+ G_BEGIN_DECLS
+ 
+-typedef struct _DeeFilter DeeFilter;
+ 
+ /**
+  * DeeModelReaderFunc:
