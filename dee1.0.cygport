@@ -1,0 +1,22 @@
+inherit gnome2 python
+
+NAME="dee1.0"
+VERSION=1.0.14
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="DBus Model-View-Controller object library"
+DESCRIPTION="Libdee is a library that uses DBus to provide objects allowing you
+to create Model-View-Controller type programs across DBus. It also consists of
+utility objects which extend DBus allowing for peer-to-peer discoverability of
+known objects without needing a central registrar."
+HOMEPAGE="https://launchpad.net/dee/"
+SRC_URI="http://launchpad.net/dee/${VERSION%.*}/${VERSION}/+download/dee-${VERSION}.tar.gz"
+SRC_DIR="dee-${VERSION}"
+PATCH_URI="0.5.22-no-undefined.patch"
+
+PKG_NAMES="${NAME} lib${NAME}_4 lib${NAME}-devel girepository-Dee1.0 vala-${NAME}"
+dee1_0_CONTENTS="usr/bin/dee-tool.exe usr/share/doc/"
+libdee1_0_4_CONTENTS="usr/bin/*-1.0-4.dll"
+libdee1_0_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+girepository_Dee1_0_CONTENTS="usr/*/gir*/Dee-1.0.* ${PYTHON_SITELIB#/}/gi/overrides/Dee.*"
+vala_dee1_0_CONTENTS="usr/share/vala/vapi/dee-1.0.*"
