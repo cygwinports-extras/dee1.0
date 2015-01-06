@@ -1,0 +1,11 @@
+--- origsrc/dee-1.2.7/configure.ac	2013-09-09 04:22:35.000000000 -0500
++++ src/dee-1.2.7/configure.ac	2015-01-06 15:08:59.952417800 -0600
+@@ -69,7 +69,7 @@ DEE_LT_CURRENT=6
+ DEE_LT_REV=1
+ DEE_LT_AGE=2
+ DEE_LT_VERSION="$DEE_LT_CURRENT:$DEE_LT_REV:$DEE_LT_AGE"
+-DEE_LT_LDFLAGS="-version-info $DEE_LT_VERSION -export-symbols-regex '^dee_.*'"
++DEE_LT_LDFLAGS="-no-undefined -version-info $DEE_LT_VERSION -export-symbols-regex '^dee_.*'"
+ 
+ AC_SUBST(DEE_LT_VERSION)
+ AC_SUBST(DEE_LT_LDFLAGS)
